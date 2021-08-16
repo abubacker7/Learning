@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.learning.CalculatorTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.023 s <<< FAILURE! - in com.learning.CalculatorTest
+add  Time elapsed: 0.016 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <2> but was: <20>
+	at com.learning.CalculatorTest.add(CalculatorTest.java:15)
+
