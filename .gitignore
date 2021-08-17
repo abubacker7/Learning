@@ -1,5 +1,5 @@
 #Unwanted Folders & Files
 
-./target
+target
 .idea
-./Learning.iml
+Learning.iml
