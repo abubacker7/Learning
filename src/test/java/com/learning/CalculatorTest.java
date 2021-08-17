@@ -1,35 +1,39 @@
 package com.learning;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class CalculatorTest {
+
+    Calculator calc;
+
+    @BeforeAll
+    public void setup() {
+        calc = new Calculator();
+    }
+
+    @AfterAll
+    public void teardown() {
+        calc = null;
+    }
 
     @Test
     public void add() {
-        var calc = new Calculator();
-        long result = calc.add( 17, 22 );
-        Assertions.assertEquals( 39, result );
+        Assertions.assertEquals( 39, calc.add(17, 22) );
     }
 
     @Test
     void sub() {
-        var calc = new Calculator();
-        long result = calc.sub( 17, 22 );
-        Assertions.assertEquals( -5, result );
+        Assertions.assertEquals( -5, this.calc.sub(17, 22) );
     }
 
     @Test
     void multiply() {
-        var calc = new Calculator();
-        long result = calc.multiply( 3, 4 );
-        Assertions.assertEquals( 12, result );
+        Assertions.assertEquals( 12, this.calc.multiply(3, 4) );
     }
 
     @Test
     void division() {
-        var calc = new Calculator();
-        long result = calc.division( 16, 4 );
-        Assertions.assertEquals( 4, result );
+        Assertions.assertEquals( 4, this.calc.division(16, 4) );
     }
 }
