@@ -10,7 +10,7 @@ public class Calculator {
     }
 
     public long multiply( long num1, long num2 ) {
-        return num1 - num2;
+        return num1 * num2;
     }
 
     public long division( long num1, long num2 ) {
