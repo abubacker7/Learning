@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.learning.CalculatorTest" time="0.023" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.learning.CalculatorTest" time="0.008" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="16"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Users/abubacker/Library/Java/JavaVirtualMachines/openjdk-16.0.2/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/abubacker/IdeaProjects/Learning/target/surefire/surefirebooter9640323078785133250.jar /Users/abubacker/IdeaProjects/Learning/target/surefire 2021-08-16T23-47-52_707-jvmRun1 surefire3257858464561277150tmp surefire_03239125649441479520tmp"/>
+    <property name="sun.java.command" value="/Users/abubacker/IdeaProjects/Learning/target/surefire/surefirebooter10617764578366669273.jar /Users/abubacker/IdeaProjects/Learning/target/surefire 2021-08-17T21-18-16_232-jvmRun1 surefire11135343718932494570tmp surefire_013194825316791966580tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/abubacker/IdeaProjects/Learning/target/test-classes:/Users/abubacker/IdeaProjects/Learning/target/classes:/Users/abubacker/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.1.0/junit-jupiter-engine-5.1.0.jar:/Users/abubacker/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/abubacker/.m2/repository/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.jar:/Users/abubacker/.m2/repository/org/junit/platform/junit-platform-commons/1.1.0/junit-platform-commons-1.1.0.jar:/Users/abubacker/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/Users/abubacker/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.1.0/junit-jupiter-api-5.1.0.jar:"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/Users/abubacker/IdeaProjects/Learning/target/surefire/surefirebooter9640323078785133250.jar"/>
+    <property name="surefire.real.class.path" value="/Users/abubacker/IdeaProjects/Learning/target/surefire/surefirebooter10617764578366669273.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="16.0.2+7-67"/>
@@ -54,9 +54,8 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="60.0"/>
   </properties>
-  <testcase name="add" classname="com.learning.CalculatorTest" time="0.016">
-    <failure message="expected: &lt;2&gt; but was: &lt;20&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <2> but was: <20>
-	at com.learning.CalculatorTest.add(CalculatorTest.java:15)
-]]></failure>
-  </testcase>
+  <testcase name="add" classname="com.learning.CalculatorTest" time="0.002"/>
+  <testcase name="sub" classname="com.learning.CalculatorTest" time="0"/>
+  <testcase name="division" classname="com.learning.CalculatorTest" time="0"/>
+  <testcase name="multiply" classname="com.learning.CalculatorTest" time="0"/>
 </testsuite>
