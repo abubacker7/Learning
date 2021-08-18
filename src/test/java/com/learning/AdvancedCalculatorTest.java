@@ -1,20 +1,18 @@
 package com.learning;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class AdvancedCalculatorTest {
 
     AdvancedCalculator calc;
 
-    @BeforeEach
+    @BeforeAll
     void setUp() {
         calc = new AdvancedCalculator();
     }
 
-    @AfterEach
+    @AfterAll
     void tearDown() {
         calc = null;
     }
