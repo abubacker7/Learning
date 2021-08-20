@@ -1,5 +1,8 @@
 package com.learning;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class AdvancedCalculator extends Calculator {
 
     @Override
@@ -7,12 +10,23 @@ public class AdvancedCalculator extends Calculator {
         return num1 + num2;
     }
 
-    public long add( long $args[] ) {
-        long totalSum = 0;
-        for ( long $arg : $args ) {
-            totalSum += $arg;
+    public long add(ArrayList<Long> args ) {
+        Iterator<Long> argsIterator = args.iterator();
+
+        long additionOfNumbers = 0;
+        while ( argsIterator.hasNext() ) {
+            additionOfNumbers += argsIterator.next();
         }
 
-        return totalSum;
+        return additionOfNumbers;
+    }
+
+    public long addTenNumbers( long[] numbers ) {
+        long sumOfNumbers = 0;
+        for ( long number : numbers ) {
+            sumOfNumbers += number;
+        }
+
+        return sumOfNumbers;
     }
 }
