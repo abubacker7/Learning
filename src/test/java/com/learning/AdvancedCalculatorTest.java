@@ -1,18 +1,22 @@
 package com.learning;
 
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+import java.util.ArrayList;
+
 class AdvancedCalculatorTest {
 
     AdvancedCalculator calc;
 
-    @BeforeAll
+    @BeforeEach
     void setUp() {
         calc = new AdvancedCalculator();
     }
 
-    @AfterAll
+    @AfterEach
     void tearDown() {
         calc = null;
     }
@@ -24,7 +28,16 @@ class AdvancedCalculatorTest {
 
     @Test
     void testAdd() {
-        long numbers[] = { 2, 2, 9, 8 };
-        Assertions.assertEquals( 21, calc.add(numbers) );
+        ArrayList<Long> numbers = new ArrayList<>();
+        numbers.add(10L);
+        numbers.add(35L);
+        numbers.add(30L);
+        Assertions.assertEquals( 75, calc.add(numbers) );
+    }
+
+    @Test
+    void addTenNumbers() {
+        long[] numbers = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 2 };
+        Assertions.assertEquals(11, this.calc.addTenNumbers(numbers));
     }
 }
