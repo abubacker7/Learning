@@ -2,6 +2,7 @@ package com.learning;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class AdvancedCalculator extends Calculator {
 
@@ -10,7 +11,7 @@ public class AdvancedCalculator extends Calculator {
         return num1 + num2;
     }
 
-    public long add( long numList[] ) {
+    public long add( List<Long> numList ) {
         long totalSum = 0;
         for ( long num : numList ) {
             totalSum += num;
