@@ -1,5 +1,8 @@
 package com.learning;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class AdvancedCalculator extends Calculator {
 
     @Override
@@ -14,5 +17,14 @@ public class AdvancedCalculator extends Calculator {
         }
 
         return totalSum;
+    }
+
+    public long addTenNumbers( long[] numbers ) {
+        long sumOfNumbers = 0;
+        for ( long number : numbers ) {
+            sumOfNumbers += number;
+        }
+
+        return sumOfNumbers;
     }
 }
