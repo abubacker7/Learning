@@ -7,10 +7,10 @@ public class AdvancedCalculator extends Calculator {
         return num1 + num2;
     }
 
-    public long add( long $args[] ) {
+    public long add( long numList[] ) {
         long totalSum = 0;
-        for ( long $arg : $args ) {
-            totalSum += $arg;
+        for ( long num : numList ) {
+            totalSum += num;
         }
 
         return totalSum;

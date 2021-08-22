@@ -1,9 +1,6 @@
 package com.learning;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Iterator;
+import java.util.*;
 
 public class StudentRecords {
     public ArrayList<Student> students;
@@ -30,12 +27,17 @@ public class StudentRecords {
 
         ArrayList<Student> listOfStudents = studentRecords.getStudentRecords();
 
-        Collections.sort(listOfStudents);
+        Comparator<Student> studentComparator = new Comparator<Student>() {
+            @Override
+            public int compare(Student o1, Student o2) {
+                if ( o1.getStudentIdNo().compareTo(o2.getStudentIdNo()) > 0 ) {
+                    return 1;
+                } else {
+                    return -1;
+                }
+            }
+        };
 
-        Iterator<Student> listOfStudentsIterator = listOfStudents.iterator();
-
-        while( listOfStudentsIterator.hasNext() ) {
-            System.out.println( listOfStudentsIterator.next().getStudentName() );
-        }
+        Collections.sort(listOfStudents, studentComparator);
     }
 }
