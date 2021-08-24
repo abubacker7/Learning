@@ -38,5 +38,11 @@ class EmployeeRecordsTest {
 
         // Both emp1 and empe aren't hascode because both object key are different
         Assertions.assertTrue( employeeRecords.getEmployeeRecords().get( emp1 ).hashCode() != employeeRecords.getEmployeeRecords().get( emp2 ).hashCode() );
+
+        // Both emp2 & emp3 are same because it has same key
+        Assertions.assertTrue( employeeRecords.getEmployeeRecords().get(emp2).equals( employeeRecords.getEmployeeRecords().get(emp3) ) );
+
+        // Both emp1 & emp3 are not same because it has different key
+        Assertions.assertFalse( employeeRecords.getEmployeeRecords().get(emp1).equals( employeeRecords.getEmployeeRecords().get(emp3) ) );
     }
 }
