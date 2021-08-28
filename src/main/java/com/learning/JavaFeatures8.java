@@ -3,8 +3,11 @@ package com.learning;
 import java.util.Arrays;
 import java.util.List;
 
+@FunctionalInterface
 interface A {
     void show();
+
+//    void show1();
 
     default void defaultMethod() {
         System.out.println("This is a default method");
@@ -22,6 +25,7 @@ public class JavaFeatures8 {
         A functionalInterface = () -> {
             System.out.println( "this is show method" );
         };
+
 
         functionalInterface.show();
     }
